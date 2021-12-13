@@ -1,0 +1,10 @@
+Description=Sparkle Event Watcher
+ConditionPathExists=/usr/local/sparkle-rpi-manager/bin/spawn-watcher.sh
+
+[Service]
+Restart=always
+RestartSec=3
+ExecStart=/usr/local/sparkle-rpi-manager/bin/spawn-watcher.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+Description=Sparkle Raspberry Pi Manager
+ConditionPathExists=/usr/local/sparkle-rpi-manager/bin/spawn-rpi-manager.sh
+
+[Service]
+Restart=always
+RestartSec=3
+ExecStart=/usr/local/sparkle-rpi-manager/bin/spawn-rpi-manager.sh
+
+[Install]
+WantedBy=multi-user.target
